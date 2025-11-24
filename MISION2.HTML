@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Misión 2 - Proyecto JS</title>
+
+    <!-- Librería externa: SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Librería externa: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Proyecto JavaScript - Misión 2</h1>
+
+    <!-- MENÚ -->
+    <nav>
+        <button id="btnContar">Contar Letras</button>
+        <button id="btnTabla">Tabla de Multiplicar</button>
+    </nav>
+
+    <hr>
+
+    <!-- SECCIÓN: Contar Letras -->
+    <section id="seccionContar" style="display:none;">
+        <h2><i class="fa-solid fa-spell-check"></i> Contar letras</h2>
+
+        <input type="text" id="inputFrase" placeholder="Escribe una frase">
+        <button id="btnContarLetras">Contar</button>
+
+        <p id="resultadoLetras"></p>
+    </section>
+
+    <!-- SECCIÓN: Tabla de multiplicar -->
+    <section id="seccionTabla" style="display:none;">
+        <h2><i class="fa-solid fa-table"></i> Tabla de multiplicar</h2>
+
+        <input type="number" id="inputNumero" placeholder="Escribe un número">
+        <button id="btnGenerarTabla">Generar tabla</button>
+
+        <ul id="resultadoTabla"></ul>
+    </section>
+
+    <!-- Conexión del JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
